@@ -1,12 +1,10 @@
 from openai import OpenAI
 
-system_message = "Your system message here."
-
 
 def query_model(prompt, system_message):
-    client = OpenAI(api_key="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")
+    client = OpenAI(api_key="Your Key")
     response = client.chat.completions.create(
-        model="ft:gpt-3.5-turbo-0613:personal::8fOMgPCA",  # Replace with your actual model name
+        model="YourModel",  # Replace with your actual model name
         messages=[
             {
                 "role": "system",
