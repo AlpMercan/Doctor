@@ -4,9 +4,9 @@ from openai import OpenAI
 
 
 def query_model(prompt, system_message):
-    client = OpenAI(api_key="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")
+    client = OpenAI(api_key="your key")
     response = client.chat.completions.create(
-        model="ft:gpt-3.5-turbo-0613:personal::8fOMgPCA",
+        model="your model",
         messages=[
             {"role": "system", "content": system_message},
             {"role": "user", "content": prompt},
